@@ -25,7 +25,6 @@ function logged_in_users {
 	who | awk '{print $1}' | sort | uniq -c | awk '{printf "%s users (%s)\n", $1, $2}'
 }
 
-
 echo "System information:"
 echo "Memory usage: $(memory_usage)"
 echo "CPU Load: $(cpu_load)"
